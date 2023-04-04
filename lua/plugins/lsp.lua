@@ -28,6 +28,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
+      autoformat = false,
       -- LSP Server Settings
       -- @type lspconfig.options
       servers = {
