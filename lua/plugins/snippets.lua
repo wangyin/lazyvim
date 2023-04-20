@@ -31,6 +31,17 @@ return {
             insert(4, "args"),
             text({ '"]', "}" }),
           }),
+          snip({
+            trig = "vslaunch",
+            namr = "VSCode Launch Config",
+            dscr = "VSCode Launch Config",
+          }, {
+            text({ "{", "\t" }),
+            text({ '"version": "0.2.0",', "\t" }),
+            text({ '"configurations": [', "\t\t" }),
+            insert(1, "Configs"),
+            text({ "", "\t]", "}" }),
+          }),
         },
       })
       require("luasnip.loaders.from_vscode").load({ paths = "~/.config/nvim/snippets" })
